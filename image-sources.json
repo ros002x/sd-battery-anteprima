@@ -1,0 +1,44 @@
+[
+  {
+    "file": "bosch.jpg",
+    "url": "https://images.tayna.com/prod-images/1200/Bosch/Bosch_Image_S4005.jpg",
+    "bytes": 85802
+  },
+  {
+    "file": "varta.png",
+    "url": "https://images.tayna.com/prod-images/1200/Varta_2025/Varta%20096-E11-2.png",
+    "bytes": 35761
+  },
+  {
+    "file": "yuasa.jpg",
+    "url": "https://images.tayna.com/prod-images/1200/Yuasa/yuasa-ytx9-bs.jpg",
+    "bytes": 75318
+  },
+  {
+    "file": "exide.png",
+    "url": "https://images.tayna.com/prod-images/1200/EXIDE_2025/EXIDE%20EA770-2025.png",
+    "bytes": 36377
+  },
+  {
+    "file": "victron.png",
+    "url": "https://www.victronenergy.com/upload/documents/12V%20100Ah%20AGM%20Super%20Cycle%20Battery%20%28front%29.png",
+    "bytes": 20069955,
+    "displayFile": "assets/victron.webp",
+    "note": "Ridimensionamento proporzionale a 1500px e compressione WebP; nessun cambiamento al prodotto."
+  },
+  {
+    "file": "ctek.png",
+    "url": "https://ctek.com/cdn/shop/files/MXS_5.0_NA-product-image-big-new.png?width=1600",
+    "bytes": 199849
+  },
+  {
+    "file": "auto-road.jpg",
+    "url": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1400&q=85",
+    "bytes": 86392
+  },
+  {
+    "file": "solar-field.jpg",
+    "url": "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=1400&q=85",
+    "bytes": 253409
+  }
+]
