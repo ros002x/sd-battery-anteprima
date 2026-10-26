@@ -3,23 +3,15 @@ const paths={search:'<circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/>
 const icon=name=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[name]}</svg>`;
 document.querySelectorAll('[data-icon]').forEach(e=>e.innerHTML=icon(e.dataset.icon));
 
-// Real product photos. Vector illustrations keep categories sharp at every size.
+// Real product photos and cutout photographs for the category buttons.
 const PRODUCT_IMAGES=['bosch.jpg','varta.png','yuasa.jpg','exide.png','victron.webp','ctek.png'];
-const drawings=[
-'<path d="m18 39 10-18h36l15 18 7 5v15H10V45l8-6Z" fill="#dceaff"/><path d="m29 25-8 15h51L61 25H29Z" fill="#fff"/><path d="M10 47h76v12H10Z" fill="#bed6ff"/><circle cx="25" cy="58" r="7" fill="#174079"/><circle cx="71" cy="58" r="7" fill="#174079"/><path d="M15 44h12m43 0h10M48 25v15"/>',
-'<circle cx="24" cy="53" r="14" fill="#e5efff"/><circle cx="75" cy="53" r="14" fill="#e5efff"/><path d="m24 53 20-29 15 29H24m35 0 10-36h-9m-26 7h17m18-7 6 36"/><path d="M39 33h20l-7 12H32Z" fill="#bed7ff"/><circle cx="24" cy="53" r="4" fill="#0066ff"/><circle cx="75" cy="53" r="4" fill="#0066ff"/>',
-'<path d="M10 20h46v37H10Z" fill="#dfebff"/><path d="M56 30h17l13 15v12H56Z" fill="#bed6ff"/><path d="M63 34h8l9 12H63Z" fill="#fff"/><circle cx="26" cy="57" r="8" fill="#174079"/><circle cx="73" cy="57" r="8" fill="#174079"/><path d="M18 27h30M18 34h30"/>',
-'<path d="m22 15 49 4 11 35-66-5 6-34Z" fill="#d6e8ff"/><path d="m25 20 42 4 8 25-54-4 4-25Z" fill="#1162d9"/><path d="m39 21-2 26m17-24 3 26m-34-18 48 4M46 53v10m-16 0h34" stroke="#87c0ff"/><circle cx="77" cy="11" r="6" fill="#64dd94" stroke="none"/>',
-'<path d="M17 17h53v35H17Z" fill="#d8e9ff"/><path d="M22 22h43v25H22Z" fill="#2183ec"/><path d="m10 52 69 0 7 7H6l4-7Z" fill="#bbd4f5"/><rect x="66" y="31" width="19" height="31" rx="3" fill="#173d75"/><rect x="70" y="35" width="11" height="20" rx="1" fill="#74c2ff"/>',
-'<rect x="18" y="19" width="58" height="35" rx="8" fill="#dbeaff"/><rect x="24" y="25" width="36" height="15" rx="3" fill="#215b9c"/><path d="m44 25-8 9h8l-5 7 14-11h-9l5-5Z" fill="#62e2aa" stroke="none"/><path d="M76 31h6q7 0 7 9v16M18 40H9v16m76 0h7m-87 0h8"/><circle cx="65" cy="44" r="2" fill="#0066ff"/>'
-];
-function drawing(index,className,label){return '<svg class="'+className+'" viewBox="0 0 96 72" fill="none" stroke="#426b9b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="'+label+'">'+drawings[index]+'</svg>';}
+const CATEGORY_IMAGES=['category-auto.webp','category-moto.webp','category-industrial.webp','category-solar.webp','category-electronics.webp','ctek.png'];
 function photo(index,type='products',className='product-photo',label='Immagine illustrativa'){
 if(type==='products')return '<img class="'+className+'" src="assets/'+PRODUCT_IMAGES[index]+'" alt="'+label+'" loading="lazy" decoding="async">';
 if(className.includes('photo-auto'))return '<img class="'+className+'" src="assets/auto-road.jpg" alt="Auto su strada" loading="lazy">';
 if(className.includes('photo-solar'))return '<img class="'+className+'" src="assets/solar-field.jpg" alt="Pannelli fotovoltaici" loading="lazy">';
 if(className.includes('photo-charger'))return '<img class="'+className+'" src="assets/ctek.png" alt="Caricabatterie CTEK" loading="lazy">';
-return drawing(index,className,label);
+return '<img class="'+className+'" src="assets/'+CATEGORY_IMAGES[index]+'" alt="'+label+'" loading="lazy" decoding="async">';
 }
 const categories=[{name:'Auto',description:'Batterie per auto',image:0},{name:'Moto',description:'Batterie per moto',image:1},{name:'Industriali',label:'Veicoli industriali',description:'Energia per il lavoro',image:2},{name:'Fotovoltaico',description:'Batterie e accumulo',image:3},{name:'Elettronica',description:'Energia per dispositivi',image:4},{name:'Caricabatterie',description:'Carica e mantenimento',image:5}];
 $('#categories').innerHTML=categories.map(c=>`<button class="category-card" data-category="${c.name}">${photo(c.image,'categories','category-photo',c.label||c.name)}<span><strong>${c.label||c.name}</strong><small>${c.description}</small></span></button>`).join('');

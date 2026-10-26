@@ -40,5 +40,44 @@
     "file": "solar-field.jpg",
     "url": "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=1400&q=85",
     "bytes": 253409
+  },
+  {
+    "file": "category-auto.png",
+    "url": "https://pngimg.com/uploads/audi/audi_PNG99496.png",
+    "page": "https://pngimg.com/images/cars/audi",
+    "bytes": 39109,
+    "displayFile": "assets/category-auto.webp",
+    "purpose": "Foto scontornata rappresentativa della categoria"
+  },
+  {
+    "file": "category-moto.png",
+    "url": "https://pngimg.com/uploads/motorcycle/motorcycle_PNG5349.png",
+    "page": "https://pngimg.com/images/cars/motorcycle",
+    "bytes": 113815,
+    "displayFile": "assets/category-moto.webp",
+    "purpose": "Foto scontornata rappresentativa della categoria"
+  },
+  {
+    "file": "category-industrial.png",
+    "url": "https://pngimg.com/uploads/truck/truck_PNG16275.png",
+    "page": "https://pngimg.com/images/cars/truck",
+    "bytes": 223742,
+    "displayFile": "assets/category-industrial.webp",
+    "purpose": "Foto scontornata rappresentativa della categoria"
+  },
+  {
+    "file": "category-electronics.png",
+    "url": "https://pngimg.com/uploads/laptop/laptop_PNG101838.png",
+    "page": "https://pngimg.com/images/laptop/laptop",
+    "bytes": 341253,
+    "displayFile": "assets/category-electronics.webp",
+    "purpose": "Foto scontornata rappresentativa della categoria"
+  },
+  {
+    "file": "category-solar.png",
+    "url": "https://pngimg.com/uploads/solar_panel/solar_panel_PNG80.png",
+    "bytes": 350143,
+    "displayFile": "assets/category-solar.webp",
+    "purpose": "Foto scontornata rappresentativa della categoria"
   }
 ]

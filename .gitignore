@@ -23,3 +23,8 @@ assets/*
 !assets/ctek.png
 !assets/auto-road.jpg
 !assets/solar-field.jpg
+!assets/category-auto.webp
+!assets/category-moto.webp
+!assets/category-industrial.webp
+!assets/category-solar.webp
+!assets/category-electronics.webp

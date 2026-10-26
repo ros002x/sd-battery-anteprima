@@ -9,3 +9,7 @@ La pagina mantiene la reference fornita dal cliente. Le schede usano foto reali 
 Font e immagini sono inclusi localmente. Le fonti dei prodotti e delle fotografie sono registrate in image-sources.json. I marchi e le foto dei prodotti appartengono ai rispettivi titolari; la selezione serve alla presentazione e andrà sostituita o confermata con il materiale commerciale del cliente. Il banner principale conserva l’immagine della reference.
 
 Il codice grafico e gli asset possono essere riutilizzati in seguito su Shopify, adattando il layout a un tema e collegando prodotti, varianti e checkout nativi. Questo progetto non è un tema direttamente importabile. Le versioni locali precedenti restano archiviate sul Desktop e non vengono pubblicate.
+
+## Aggiornamento categorie e banner
+
+I sei pulsanti usano foto scontornate al posto delle illustrazioni. Le immagini dei banner sfumano tramite maschera alfa, con bordo iniziale completamente trasparente. I crediti e le fonti delle nuove immagini rappresentative sono in image-sources.json.
